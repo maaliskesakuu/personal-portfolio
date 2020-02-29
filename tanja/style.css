@@ -88,7 +88,8 @@ nav ul li a:active {
 }
 
 .container {
-    max-width: 100vw;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 #about_me {
@@ -191,7 +192,6 @@ ul.resume {
 
 #image_slider {
     position: relative;
-    max-width: 100vw; 
     height: auto;
 }
 
@@ -254,7 +254,8 @@ footer {
     height: auto;
     width: 100vw;
     position: relative;
-    max-width: 100vw;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 #contact {
@@ -348,6 +349,43 @@ footer {
 #to_top_btn:hover {
     cursor: pointer;
     background-color: steelblue;
+}
+
+@media (min-width: 1441px) {
+
+    body {
+        line-height: 2rem;
+        font-size: x-large;
+    }
+
+    #hero_banner {
+        height: 30vh;
+    }
+
+    #edu_container {
+        flex-wrap: wrap;
+    }
+
+    #contact {
+        margin: 0;
+    }
+
+    .text {
+        bottom: 10%;
+    }
+
+    .dot {
+        padding-right: 3vw;
+    }
+
+}
+
+@media (min-width: 2110px) {
+
+    #bc {
+        margin-right: 0;
+        margin-bottom: 2vh;
+    }
 }
 
 /* iPads */
