@@ -243,7 +243,7 @@ ul.resume {
     color: lightsteelblue;
 }
 
-img {
+.my_slides img {
     width: 100%;
     height: auto;
 }
