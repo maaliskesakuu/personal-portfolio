@@ -85,7 +85,7 @@ nav ul li a:active {
     bottom: 0;
     left: 0;
     margin: 1vh 2vw;
-    box-shadow: 0 0 5px steelblue;
+    box-shadow: 0 0 5px lightsteelblue;
 }
 
 .container {
@@ -191,13 +191,15 @@ ul.resume {
     border-radius: 5px;
 }
 
-#image_slider {
-    position: relative;
-    height: auto;
-}
-
 #my_slides {
     position: relative;
+    overflow: hidden;
+}
+
+.my_slides img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .text {
@@ -215,15 +217,16 @@ ul.resume {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 100%;
     position: relative;
     margin: 10vh 10vw;
     padding: 15vh; 
+    background-color: lightsteelblue;
+    border-radius: 5px;
 }
 
 .prev, .next {
-    color: rgb(255, 105, 180);
     cursor: pointer;
     padding-top: 1vh;
 }
@@ -234,19 +237,14 @@ ul.resume {
 
 .dot {
     display: inline-block;
-    color: rgb(255, 105, 180);
     cursor: pointer;
-    padding-right: 4vw;
+    padding-right: 2vw;
     padding-top: 1vh;
+    padding: 1vh 1vw 0;
 }
 
 .dot:active {
     color: lightsteelblue;
-}
-
-.my_slides img {
-    width: 100%;
-    height: auto;
 }
 
 footer {
@@ -372,16 +370,15 @@ footer {
     }
 
     .text {
-        bottom: 10%;
+        bottom: 0;
     }
-
-    .dot {
-        padding-right: 3vw;
-    }
-
 }
 
 @media (min-width: 2110px) {
+
+    #bc, #university {
+        min-height: 24vh;
+    }
 
     #bc {
         margin-right: 0;
@@ -408,9 +405,13 @@ footer {
         display: block;
     }
 
+    #bc, #university {
+        min-height: 24vh;
+    }
+
     #bc {
         margin-right: 0;
-        margin-bottom: 1vh;
+        margin-bottom: 2vh;
     }
 
     .text {
@@ -486,8 +487,13 @@ footer {
     }
 
     #image_container {
-        padding: 1vh 0 2vh;
+        padding: 0 0 2vh;
         margin: 0;
+        border-radius: 0;
+    }
+
+    .my_slides img {
+        border-radius: 0;
     }
 
     .text {
@@ -495,11 +501,13 @@ footer {
     }
 
     .prev, .next {
+        color: rgb(255, 105, 180);
         padding-left: 2vw;
         padding-right: 2vw;
     }   
 
     .dot {
+        color: rgb(255, 105, 180);
         padding-left: 4vw;
     }
 
@@ -584,8 +592,13 @@ footer {
     }
 
     #image_container {
-        padding: 1vh 0 2vh;
+        padding: 0 0 2vh;
         margin: 0;
+        border-radius: 0;
+    }
+
+    .my_slides img {
+        border-radius: 0;
     }
 
     .text {
@@ -593,11 +606,13 @@ footer {
     }
 
     .prev, .next {
+        color: rgb(255, 105, 180);
         padding-left: 2vw;
         padding-right: 2vw;
     }   
 
     .dot {
+        color: rgb(255, 105, 180);
         padding-left: 4vw;
     }
 
