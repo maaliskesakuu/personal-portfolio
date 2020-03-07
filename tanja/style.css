@@ -16,8 +16,9 @@ body {
 }
 
 .dark_mode {
-    background-color: #151516;
+    background-color: #202225;
     z-index: 20;
+    opacity: 0.9;
 } 
 
 header {
@@ -49,8 +50,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #151516;
-    border-bottom: 0.5vh solid #151516;;
+    color: #333;
+    border-bottom: 0.5vh solid #333;
 }
 
 nav ul li a:active {
@@ -58,7 +59,7 @@ nav ul li a:active {
 }
 
 #hero_banner {
-    background-color: linen;
+    background-color: #f3e8df;
     background-image: url('Banner.png');
     background-repeat: no-repeat;
     background-position: right;
@@ -70,12 +71,24 @@ nav ul li a:active {
 }
 
 #hero_banner a {
+    color: rgb(255, 105, 180);
     display: inline-block;
     margin: 1vh;
     cursor: pointer;
     margin-left: 2vw;
-    font-size: x-large;
-    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    padding: 0 2px;
+    box-shadow: 0 0 5px #333;
+    z-index: 1000;
+}
+
+#hero_banner a:active {
+    background-color: lightsteelblue;
+}
+
+.fa-eye-slash {
+    color: rgb(255, 105, 180);
 }
 
 #header_picture {
@@ -85,7 +98,6 @@ nav ul li a:active {
     bottom: 0;
     left: 0;
     margin: 1vh 2vw;
-    box-shadow: 0 0 5px lightsteelblue;
 }
 
 .container {
@@ -107,7 +119,7 @@ nav ul li a:active {
     position: relative;
     margin: 10vh 10vw;
     padding: 15vh;
-    background-color: linen;
+    background-color: #f3e8df;
     border-radius: 5px;
 }
 
@@ -155,7 +167,7 @@ h3 {
 
 #bc, #university {
     flex: 1;
-    background-color: linen;
+    background-color: #f3e8df;
     display: block;
     padding: 2vh 2vw;
     border-radius: 5px;
@@ -186,7 +198,7 @@ h3 {
 ul.resume {
     display: block;
     list-style-type: none;
-    background-color: linen;
+    background-color: #f3e8df;
     padding: 2vh 2vw;
     border-radius: 5px;
 }
@@ -247,6 +259,10 @@ ul.resume {
     color: lightsteelblue;
 }
 
+.active {
+    color: rgb(255, 105, 180);
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -281,24 +297,24 @@ footer {
     position: relative;
 }
 
-#mail {
+.mail {
     flex: 1;
     display: block;
     padding-right: 1vw;
 }
 
-#mail a {
+.mail a {
     text-decoration: none;
     color: white;
 }
 
-#mail a:hover {
+.mail a:hover {
     text-decoration: none;
     color: lightgrey;
 }
 
-#mail a:active {
-    color: steelblue;
+.mail a:active {
+    color: lightsteelblue;
 }
 
 #map {
@@ -450,7 +466,7 @@ footer {
     }
 
     #hero_banner a {
-        font-size: smaller;
+        font-size: x-small;
         margin-top: 0.5vh;
     }
 
@@ -479,7 +495,7 @@ footer {
     }
 
     #work_container {
-        background-color: linen;
+        background-color: #f3e8df;
     }
 
     ul.resume {
@@ -511,7 +527,7 @@ footer {
         padding-left: 4vw;
     }
 
-    #mail {
+    .mail {
         padding-right: 0;
     }
 
@@ -555,7 +571,7 @@ footer {
     }
 
     #hero_banner a {
-        font-size: smaller;
+        font-size: x-small;
         margin-top: 0.5vh;
     }
 
@@ -584,7 +600,7 @@ footer {
     }
 
     #work_container {
-        background-color: linen;
+        background-color: #f3e8df;
     }
 
     ul.resume {
@@ -624,7 +640,7 @@ footer {
         display: block;
     }
 
-    #mail {
+    .mail {
         padding-right: 0;
     }
 
