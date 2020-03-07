@@ -51,7 +51,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #333;
-    border-bottom: 0.5vh solid #333;
+    border-bottom: 0.6vh solid #333;
 }
 
 nav ul li a:active {
@@ -234,7 +234,7 @@ ul.resume {
     position: relative;
     margin: 10vh 10vw;
     padding: 15vh; 
-    background-color: lightsteelblue;
+    background-color: #f3e8df;
     border-radius: 5px;
 }
 
@@ -473,9 +473,13 @@ footer {
     #about_container, 
     #education_container, #work_container, #image_container, #contact {
         display: block;
-        margin: 2vh;
+        margin: 2vh 0;
         padding: 2vh 0;
-        border-radius: 3px;
+        border-radius: 0;
+    }
+
+    #about_container {
+        margin-top: 0;
     }
 
     #print_btn {
@@ -504,7 +508,6 @@ footer {
 
     #image_container {
         padding: 0 0 2vh;
-        margin: 0;
         border-radius: 0;
     }
 
@@ -517,14 +520,16 @@ footer {
     }
 
     .prev, .next {
-        color: rgb(255, 105, 180);
         padding-left: 2vw;
-        padding-right: 2vw;
+        padding-right: 1vw;
     }   
 
     .dot {
-        color: rgb(255, 105, 180);
         padding-left: 4vw;
+    }
+
+    .active {
+        color: rgb(255, 105, 180);
     }
 
     .mail {
@@ -578,9 +583,13 @@ footer {
     #about_container, 
     #education_container, #work_container, #image_container, #contact {
         display: block;
-        margin: 2vh;
+        margin: 2vh 0;
         padding: 2vh 0;
-        border-radius: 3px;
+        border-radius: 0;
+    }
+
+    #about_container {
+        margin-top: 0;
     }
 
     #print_btn {
@@ -609,7 +618,6 @@ footer {
 
     #image_container {
         padding: 0 0 2vh;
-        margin: 0;
         border-radius: 0;
     }
 
@@ -622,14 +630,16 @@ footer {
     }
 
     .prev, .next {
-        color: rgb(255, 105, 180);
         padding-left: 2vw;
-        padding-right: 2vw;
+        padding-right: 1vw;
     }   
 
     .dot {
-        color: rgb(255, 105, 180);
         padding-left: 4vw;
+    }
+
+    .active {
+        color: rgb(255, 105, 180);
     }
 
     #contact {
