@@ -45,7 +45,7 @@ nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     padding-bottom: 1.5vh;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: larger;
 }
 
@@ -60,7 +60,7 @@ nav ul li a:active {
 
 #hero_banner {
     background-color: #f3e8df;
-    background-image: url('Banner.png');
+    background-image: url('Purple\ Brush\ Paint\ General\ Linkedin\ Banner.png');
     background-repeat: no-repeat;
     background-position: right;
     background-attachment: scroll;

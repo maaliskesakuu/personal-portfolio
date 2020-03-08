@@ -95,12 +95,17 @@
                 <div class="my_slides">
                     <img src="sheep2.jpeg" alt="Feeding sheep">
                     <div class="text">Feeding sheep</div>
+                </div>   
+                <div class="my_slides">
+                    <img src="simpsons.jpg" alt="Visiting the Simpsons">
+                    <div class="text">The Simpsons</div>
                 </div>    
                 <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-left"></i></a>
                 <a class="next" onclick="plusSlides(1)"><i class="fa fa-chevron-right"></i></a>
                 <div>
                     <span class="dot active" onclick="currentSlide(1)"><i class="fa fa-circle"></i></i></span>
                     <span class="dot active" onclick="currentSlide(2)"><i class="fa fa-circle"></i></i></span>
+                    <span class="dot active" onclick="currentSlide(3)"><i class="fa fa-circle"></i></i></span>
                 </div>
             </div>
         </section>
@@ -212,7 +217,7 @@
         var day = now.getDate();
         var month = now.getMonth() + 1;
         var year = now.getFullYear();
-        document.getElementById("date").innerHTML = day + "/" + month + "/" + year;
+        document.getElementById("date").innerHTML = day + "." + month + "." + year;
 
         $(document).ready(function() {
             $.ajax({url: "//api.openweathermap.org/data/2.5/weather?q=helsinki&APPID=eb176a66e13d4a5d0d58a22e4a181d8f&units=metric"}).done(function (resp) {
