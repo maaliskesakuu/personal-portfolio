@@ -347,7 +347,7 @@ footer {
     display: none;
     background-color: lightgray;
     width: 5vw;
-    height: 5vh;
+    height: 6vh;
     text-align: center;
     border-radius: 3px;
     position: fixed;
@@ -534,8 +534,12 @@ footer {
         display: block;
     }
 
+    #contact {
+        margin-bottom: 0;
+    }
+
     #to_top_btn {
-        width: 8vw;
+        width: 9vw;
         right: 5%;
     }
 }
@@ -623,11 +627,15 @@ footer {
         display: block;
     }
 
+    #contact {
+        margin-bottom: 0;
+    }
+
     .mail {
         padding-right: 0;
     }
 
     #to_top_btn {
-        width: 8vw;
+        width: 9vw;
     }
 }
