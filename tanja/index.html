@@ -15,7 +15,7 @@
     <title>Tanja's website</title>
     <link rel="stylesheet" href="style.css">
     <link href="//fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Seaweed+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush&display=swap" rel="stylesheet">
     <link rel=stylesheet href="//unpkg.com/aos@next/dist/aos.css" >
     <script src="//use.fontawesome.com/e22008024a.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -44,7 +44,7 @@
     </header>
     <main>
         <section id="hero_banner" class="container">
-            <a onclick="darker()"><i class="fa fa-eye-slash"></i> switch color mode</a>
+            <button onclick="darker()"><i class="fa fa-eye-slash"></i> switch color mode</button>
             <img id="header_picture" src="Tanjan_kuva.jpeg" alt="a picture of me with an alligator">
             <div class="hero_text">
                 <h1>Tanja Lehtinen</h1>
@@ -166,9 +166,9 @@
                 showSlides(slideIndex += 1);
             }
             if (n === -1) {
-                my_timer = setInterval(function(){plusSlides(n + 2)}, 4000);
+                my_timer = setInterval(function(){plusSlides(n + 2)}, 5000);
             } else {
-                my_timer = setInterval(function(){plusSlides(n + 1)}, 4000);
+                my_timer = setInterval(function(){plusSlides(n + 1)}, 5000);
             }
         }
 
@@ -193,12 +193,12 @@
 
         window.addEventListener("load", function() {
             showSlides(slideIndex);
-            my_timer = setInterval(function(){plusSlides(1)}, 4000);
+            my_timer = setInterval(function(){plusSlides(1)}, 5000);
         })
 
         function currentSlide(n) {
             clearInterval(my_timer);
-            my_timer = setInterval(function(){plusSlides(n + 1)}, 4000);
+            my_timer = setInterval(function(){plusSlides(n + 1)}, 5000);
             showSlides(slideIndex = n);
         }
 

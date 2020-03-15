@@ -70,20 +70,27 @@ nav ul li a:active {
     position: relative;
 }
 
-#hero_banner a {
+#hero_banner button {
     display: inline-block;
     margin: 1vh;
-    cursor: pointer;
     margin-left: 2vw;
     font-size: 1.2rem;
     border-radius: 3px;
-    padding: 0 2px;
-    box-shadow: 0 0 5px #333;
+    padding: 0.5em;
+    box-shadow: inset 0 0 5px lightsteelblue;
     z-index: 1000;
+    background-color: lightgray;
+    border: none;
+    text-align: center;
 }
 
-#hero_banner a:active {
-    background-color: lightsteelblue;
+#hero_banner button:hover {
+    cursor: pointer;
+    background-color: steelblue;
+}
+
+#hero_banner button:active {
+    text-decoration: underline;
 }
 
 #header_picture {
@@ -96,7 +103,7 @@ nav ul li a:active {
 }
 
 h1 {
-    font-family: 'Seaweed Script', cursive;
+    font-family: 'Alex Brush', cursive;
     font-size: 4.5em;
     color: steelblue;
     text-align: center;
@@ -343,6 +350,7 @@ footer {
     font-weight: normal;
     font-size: 1.2rem;
     padding: 1rem;
+    box-shadow: inset 0 0 5px lightsteelblue;
 }
 
 #print_btn:hover {
@@ -367,6 +375,7 @@ footer {
     z-index: 100;
     border: none;
     color: black;
+    box-shadow: inset 0 0 5px lightsteelblue;
 }
 
 #to_top_btn:hover {
@@ -489,7 +498,7 @@ footer {
         height: 25vh;
     }
 
-    #hero_banner a {
+    #hero_banner button {
         font-size: x-small;
         margin-top: 0.5vh;
         margin-left: 2.5vw;
@@ -572,7 +581,7 @@ footer {
     }
 
     h1 {
-        font-size: 2.3em;
+        font-size: 2.2em;
     }
 
     nav ul li {
@@ -595,7 +604,7 @@ footer {
         height: 28vh;
     }
 
-    #hero_banner a {
+    #hero_banner button {
         font-size: x-small;
         margin-top: 0.5vh;
         margin-left: 2.5vw;
