@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156458203-2"></script>
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-156458203-2"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -15,7 +15,7 @@
     <title>Tanja's website</title>
     <link rel="stylesheet" href="style.css">
     <link href="//fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Alex+Brush&display=swap" rel="stylesheet">
     <link rel=stylesheet href="//unpkg.com/aos@next/dist/aos.css" >
     <script src="//use.fontawesome.com/e22008024a.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -23,13 +23,14 @@
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-T3NDDDK');</script>
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T3NDDDK');
+    </script>
         <!-- End Google Tag Manager -->
 </head>
 <body>
         <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3NDDDK"
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T3NDDDK"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
     <header id="header" class="container">
@@ -45,7 +46,7 @@
     <main>
         <section id="hero_banner" class="container">
             <button onclick="darker()"><i class="fa fa-eye-slash"></i> switch color mode</button>
-            <img id="header_picture" src="Tanjan_kuva.jpeg" alt="a picture of me with an alligator">
+            <img id="header_picture" src="assets/Tanjan_kuva.jpeg" alt="a picture of me with an alligator">
             <div class="hero_text">
                 <h1>Tanja Lehtinen</h1>
             </div>
@@ -113,15 +114,15 @@
         <section id="image_slider" class="container">
             <div id="image_container">
                 <div class="my_slides">
-                    <img src="hanko2.jpeg" alt="The sea in Hanko, Finland">
+                    <img src="assets/hanko2.jpeg" alt="The sea in Hanko, Finland">
                     <div class="text">The Gulf of Finland</div>
                 </div>
                 <div class="my_slides">
-                    <img src="sheep2.jpeg" alt="Feeding sheep">
+                    <img src="assets/sheep2.jpeg" alt="Feeding sheep">
                     <div class="text">Feeding sheep</div>
                 </div>   
                 <div class="my_slides">
-                    <img src="simpsons.jpg" alt="Visiting the Simpsons">
+                    <img src="assets/simpsons.jpg" alt="Visiting the Simpsons">
                     <div class="text">The Simpsons</div>
                 </div>    
                 <div>
@@ -221,7 +222,7 @@
         function print() {
             var objFra = document.createElement("iframe");
             objFra.style.visibility = "hidden";
-            objFra.src = "CV_Tanja_Lehtinen.pdf";
+            objFra.src = "assets/CV_Tanja_Lehtinen.pdf";
 
             document.body.appendChild(objFra);
 
