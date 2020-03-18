@@ -16,13 +16,13 @@ body {
 }
 
 .dark_mode {
-    background-color: #202225;
+    background-color: #101114;
     z-index: 20;
     opacity: 0.9;
 } 
 
 header {
-    background-color: steelblue;
+    background-color: #657891;
     position: sticky;
     top: 0;
     left: 0;
@@ -50,17 +50,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #333;
-    border-bottom: 0.6vh solid #333;
+    color: #30353c;
+    border-bottom: 0.6vh solid #30353c;
 }
 
 nav ul li a:active {
-    color: lightsteelblue;
+    color: rgba(176, 196, 222,);
 }
 
 #hero_banner {
-    background-color: #f3e8df;
-    background-image: url(./assets/Purple\ Brush\ Paint\ General\ Linkedin\ Banner\ No\ Name.png);
+    background-color: #f1e6e5;
+    background-image: url(./assets/Banner.png);
     background-repeat: no-repeat;
     background-position: right;
     background-attachment: scroll;
@@ -77,16 +77,17 @@ nav ul li a:active {
     font-size: 1.2rem;
     border-radius: 3px;
     padding: 0.5em;
-    box-shadow: inset 0 0 5px lightsteelblue;
+    box-shadow: inset 0 0 3px #606a79;
     z-index: 1000;
-    background-color: lightgray;
+    background-color: #30353c;
     border: none;
     text-align: center;
+    color: white;
 }
 
 #hero_banner button:hover {
     cursor: pointer;
-    background-color: steelblue;
+    background-color: #101114;
 }
 
 #hero_banner button:active {
@@ -105,7 +106,7 @@ nav ul li a:active {
 h1 {
     font-family: 'Alex Brush', cursive;
     font-size: 4.5em;
-    color: steelblue;
+    color: #657891;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -132,7 +133,7 @@ h1 {
     position: relative;
     margin: 10vh 10vw;
     padding: 15vh;
-    background-color: #f3e8df;
+    background-color: #f1e6e5;
     border-radius: 5px;
 }
 
@@ -180,7 +181,7 @@ h3 {
 
 #bc, #university {
     flex: 1;
-    background-color: #f3e8df;
+    background-color: #f1e6e5;
     display: block;
     padding: 2vh 2vw;
     border-radius: 5px;
@@ -211,7 +212,7 @@ h3 {
 ul.resume {
     display: block;
     list-style-type: none;
-    background-color: #f3e8df;
+    background-color: #f1e6e5;
     padding: 2vh 2vw;
     border-radius: 5px;
 }
@@ -249,7 +250,7 @@ ul.resume {
     position: relative;
     margin: 10vh 10vw;
     padding: 15vh; 
-    background-color: #f3e8df;
+    background-color: #f1e6e5;
     border-radius: 5px;
 }
 
@@ -273,11 +274,11 @@ ul.resume {
 }
 
 .active {
-    color: steelblue;
+    color: #657891;
 }
 
 footer {
-    background-color: #333;
+    background-color: #30353c;
     color: white;
     height: auto;
     width: 100vw;
@@ -327,7 +328,7 @@ footer {
 }
 
 .mail a:active {
-    color: steelblue;
+    color: lightsteelblue;
 }
 
 #map {
@@ -350,12 +351,12 @@ footer {
     font-weight: normal;
     font-size: 1.2rem;
     padding: 1rem;
-    box-shadow: inset 0 0 5px lightsteelblue;
+    box-shadow: inset 0 0 3px #606a79;
 }
 
 #print_btn:hover {
     cursor: pointer;
-    background-color: steelblue;
+    background-color: #657891;
 }
 
 #print_btn:active {
@@ -375,12 +376,12 @@ footer {
     z-index: 100;
     border: none;
     color: black;
-    box-shadow: inset 0 0 5px lightsteelblue;
+    box-shadow: inset 0 0 3px #606a79;
 }
 
 #to_top_btn:hover {
     cursor: pointer;
-    background-color: steelblue;
+    background-color: #657891;
 }
 
 @media (min-width: 1441px) {
@@ -411,14 +412,15 @@ footer {
 
 @media (min-width: 2110px) {
 
-    #bc, #university {
-        min-height: 24vh;
+    #about_container, #education_container, #work_container, #image_container {
+        padding: 5vh 5vw;
     }
 
-    #bc {
-        margin-right: 0;
-        margin-bottom: 2vh;
+    #hero_banner button {
+        padding: 1em;
+        font-size: 1.5rem;
     }
+
 }
 
 /* iPads */
@@ -527,7 +529,7 @@ footer {
     }
 
     #bc, #university, ul.resume  {
-        background-color: lightsteelblue;
+        background-color: transparent;
         padding: 0;
         border-radius: 0;
     }
@@ -568,8 +570,8 @@ footer {
     }
 
     #to_top_btn {
-        width: 9vw;
-        right: 5%;
+        width: 2rem;
+        right: 2%;
     }
 }
 
@@ -633,7 +635,7 @@ footer {
     }
 
     #bc, #university, ul.resume {
-        background-color: lightsteelblue;
+        background-color: transparent;
         padding: 0;
         border-radius: 0;
     }
@@ -669,6 +671,7 @@ footer {
     }
 
     #to_top_btn {
-        width: 9vw;
+        width: 10vw;
+        right: 3%;
     }
 }
