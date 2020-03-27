@@ -55,12 +55,12 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-    color: rgba(176, 196, 222,);
+    color: rgb(176, 196, 222);
 }
 
 #hero_banner {
     background-color: #f1e6e5;
-    background-image: url(./assets/Banner.png);
+    background-image: url("assets/banner.png");
     background-repeat: no-repeat;
     background-position: right;
     background-attachment: scroll;
@@ -337,6 +337,7 @@ footer {
     margin-right: 1vw;
     margin-bottom: 4vh;
     border: none;
+    border-radius: 5px;
 }
 
 #print_btn {
@@ -354,12 +355,12 @@ footer {
     box-shadow: inset 0 0 3px #606a79;
 }
 
-#print_btn:hover {
+#print_btn:hover, #to_top_btn:hover, .text-center button:hover {
     cursor: pointer;
     background-color: #657891;
 }
 
-#print_btn:active {
+#print_btn:active, .text-center button:active {
     text-decoration: underline;
 }
 
@@ -379,9 +380,39 @@ footer {
     box-shadow: inset 0 0 3px #606a79;
 }
 
-#to_top_btn:hover {
-    cursor: pointer;
-    background-color: #657891;
+.form-group input, .form-group textarea {
+    border-radius: 5px;
+    border: 1px solid #30353c;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: large;
+}
+
+.form-group input {
+    height: 2.5rem;
+}
+
+.form-group textarea {
+    margin: 0.5rem 0;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+    padding-left: 0.5rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: small;
+}
+
+.text-center button {
+    background-color: lightgray;
+    width: 10vw;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    color: black;
+    box-shadow: inset 0 0 3px #606a79;
+    font-weight: normal;
+    font-size: 1.2rem;
+    padding: 1rem;
 }
 
 @media (min-width: 1441px) {
@@ -475,7 +506,7 @@ footer {
         font-size: 1.9em;
     }
 
-    h2, h3, p, a, #map, .dot {
+    h2, h3, p, a, #map, .dot, .form-group input, .form-group textarea {
         margin-left: 2.5vw;
         margin-right: 2.5vw;
     }
@@ -518,10 +549,15 @@ footer {
         border-radius: 0;
     }
 
-    #print_btn {
+    #print_btn, .text-center button  {
         font-size: 0.8rem;
         padding: 0.2rem;
         margin-left: 2.5vw;
+    }
+
+    .text-center button {
+        font-size: 0.6rem;
+        height: 1.5rem;
     }
 
     #edu_container { 
@@ -573,11 +609,15 @@ footer {
         width: 2rem;
         right: 2%;
     }
+
+    .form-group input, .form-group textarea {
+        width: 95%;
+    }
 }
 
 @media (min-width: 321px) and (max-width: 767px) {
 
-    h2, h3, p, a, #map, .dot {
+    h2, h3, p, a, #map, .dot, .form-group input, .form-group textarea {
         margin-left: 2.5vw;
         margin-right: 2.5vw;
     }
@@ -624,7 +664,7 @@ footer {
         border-radius: 0;
     }
 
-    #print_btn {
+    #print_btn, .text-center button {
         font-size: 0.8rem;
         padding: 0.2rem;
         margin-left: 2.5vw;
@@ -673,5 +713,9 @@ footer {
     #to_top_btn {
         width: 10vw;
         right: 3%;
+    }
+
+    .form-group input, .form-group textarea {
+        width: 95%;
     }
 }
