@@ -246,17 +246,15 @@
         var day = now.getDate();
         var month = now.getMonth() + 1;
         var year = now.getFullYear();
-        document.getElementById("date").innerHTML = day + "." + month + "." + year;
+        document.getElementById("date").textContent = day + "." + month + "." + year;
 
         $(document).ready(function() {
             $.ajax({url: "//api.openweathermap.org/data/2.5/weather?q=helsinki&APPID=eb176a66e13d4a5d0d58a22e4a181d8f&units=metric"}).done(function (resp) {
-                console.log(resp);
-                    $("#weather").text("By the way, it is "
-                    + resp.main.temp
-                    + " degrees in Celcius in Helsinki and it feels like "
-                    + resp.main.feels_like
-                    + " degrees in Celcius." 
-                );
+                document.getElementById("weather").textContent = "By the way, it is " 
+                + resp.main.temp 
+                + " degrees in Celcius in Helsinki and it feels like " 
+                + resp.main.feels_like 
+                + " degrees in Celcius."
             });
         });
 
